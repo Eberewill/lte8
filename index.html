@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Willsmart New Phone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <img src="images/logo2.jpg" />
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#"> Order</a></li>
+            
+            <li><a href="#"> About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="information">
+        <div class="overlay"></div>
+        <img src="images/mobile2.png" class="mobile" />
+        <div id="circle">
+          <div class="features one">
+            <img src="images/camera.png" alt="camera" />
+            <div>
+              <h1>HD Volt</h1>
+              <p>4G HD VOLT/p>
+            </div>
+          </div>
+          <div class="features two">
+            <img src="images/battery.png" alt="camera" />
+            <div>
+              <h1>Strong Battery</h1>
+              <p>6000 Ampere battery life</p>
+            </div>
+          </div>
+          <div class="features three">
+            <img src="images/display.png" alt="camera" />
+            <div>
+              <h1>All In One</h1>
+              <p>Bleutooth, Fm-Radio & Mp3</p>
+            </div>
+          </div>
+          <div class="features four">
+            <img src="images/processor.png" alt="camera" />
+            <div>
+              <h1>4G</h1>
+              <p>4G Fast Wifi </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <img src="images/arrow.png" id="upBtn" />
+        <h3>LTE818 Features </h3>
+        <img src="images/arrow.png" id="downBtn" />
+      </div>
+    </div>
+
+    <script>
+      var circle = document.getElementById("circle");
+      var upBtn = document.getElementById("upBtn");
+      var downBtn = document.getElementById("downBtn");
+      var rotateValue = circle.style.transform;
+      var rotateSum;
+      upBtn.onclick = function () {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      };
+      downBtn.onclick = function () {
+        rotateSum = rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      };
+    </script>
+  </body>
+</html>
